@@ -16,7 +16,7 @@ const forecast = (latitude, longitude, callbackForecast) =>{
             //     summary: body.daily.data[0].summary
 
             // })
-            callbackForecast(undefined, body.daily.data[0].summary  + ' It is currently ' + body.currently.temperature + ' degrees out. ' + 'There is ' + body.currently.precipProbability + '% chance of rain. ')
+            callbackForecast(undefined, body.daily.data[0].summary  + ' It is currently ' + body.currently.temperature + ' degrees out. ' + 'There is ' + body.currently.precipProbability + '% chance of rain. Todays highest temprature till now is ' + body.daily.data[0].temperatureHigh + ' and lowest is ' + body.daily.data[0].temperatureLow + '.');
         }
     })
 }
